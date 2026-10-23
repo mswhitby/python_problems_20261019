@@ -1,5 +1,9 @@
 def fizz_buzz(num):
-  # Look at "Modulus" operator (%): https://www.w3schools.com/python/python_operators_arithmetic.asp
-  # If/Else: https://www.w3schools.com/python/python_conditions.asp
-
-  ...
+  str1 = ""
+  if(num%3 == 0):
+    str1 = str1 +"Fizz"
+  if(num%5 == 0):
+    str1 = str1+"Buzz"
+  if(num%3 != 0 and num%5 != 0):
+    str1 = str1 + str(num)
+  return str1
